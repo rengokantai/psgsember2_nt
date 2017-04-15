@@ -66,12 +66,14 @@ this.get('load')(url)
 table-production
 ```
 actions:{
-  sortData(sortBy){ sort data here}
+  sortData(sortBy){ 
+    this.set('sort_by',column);
+  }
 }
 ```
 and table-th
 ```
 actions:{
-sort(){ this.get('sortData')(sortBy);
+  sort(){ this.get('sortData')(sort_by);
 }
 ```
