@@ -31,3 +31,5 @@ actions:{
     }
 }
 ```
+#### 06:49 use closure
+A closure is when a function is packaged with its vairable has access to.
