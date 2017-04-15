@@ -33,3 +33,31 @@ actions:{
 ```
 #### 06:49 use closure
 A closure is when a function is packaged with its vairable has access to.
+
+#### 08:03
+```
+ember install ember-route-action-helper
+```
+And
+in production component(production.hbs),change
+```
+{{loopy-loader action="loadData"}}
+```
+to
+```
+load = (route-action 'loadData')
+```
+
+#### 08:32
+in loopy-loader.js,change
+```
+loadData(){
+    let newStart = this.get('start_time');
+    let url = `/${newStart}/to/${newEnd}`;
+    this.sendAction("action",url);
+    }
+```
+to
+```
+this.get('load')(url)
+```
