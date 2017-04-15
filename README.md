@@ -61,3 +61,17 @@ to
 ```
 this.get('load')(url)
 ```
+
+### 5 More closure Actions
+table-production
+```
+actions:{
+  sortData(sortBy){ sort data here}
+}
+```
+and table-th
+```
+actions:{
+sort(){ this.get('sortData')(sortBy);
+}
+```
