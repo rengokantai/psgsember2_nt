@@ -3,4 +3,7 @@
 ### 4 Sending Actions
 #### 04:13
 Action Bubbling
-- Production Controller-> Production route handler->Application Route Handler
+- Production Controller-> Production route handler->Application Route Handler  
+
+
+To avoid this we should use a component
